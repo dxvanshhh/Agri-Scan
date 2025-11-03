@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Scan: Project Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="vanta-bg"></div>
+
+    <nav>
+        <a href="home.html" class="logo">🌿 Agri-Scan</a>
+        <div class="nav-links">
+            <a href="home.html" data-key="nav_home">Home</a>
+            <a href="scan.html" data-key="nav_scan">Leaf Scan</a>
+            <a href="field_scan.html" data-key="nav_field_scan">Field Scan</a>
+            <a href="about.html" data-key="nav_about">About</a>
+            <a href="project.html" data-key="nav_project">Project Details</a>
+            <div class="lang-toggle">
+                <button id="lang-en" class="active">EN</button>
+                <button id="lang-hi">HI</button>
+            </div>
+            <div class="notification-bell">
+                <span class="bell-icon" id="bell-icon">🔔</span>
+                <span class="dot" id="bell-dot"></span>
+                <div class="notification-dropdown" id="notification-menu">
+                    <div class="header" data-key="alert_title">Proactive Alerts</div>
+                    <div class="alert-item"><strong data-key="alert_1_title">FUNGAL ALERT</strong><div data-key="alert_1_body">High humidity in your area increases risk for Late Blight.</div><div class="time">1 hour ago</div></div>
+                    <div class="alert-item"><strong data-key="alert_2_title">VIRUS ALERT</strong><div data-key="alert_2_body">Whitefly populations detected nearby. Monitor tomatoes for Yellow Leaf Curl Virus.</div><div class="time">1 day ago</div></div>
+                </div>
+            </div>
+            <a href="index.html" data-key="nav_logout" style="opacity: 1; color: #ffadad;">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="about-content">
+                <h1 data-key="project_title">Project Details</h1>
+                
+                <h3 data-key="project_h_tech">Production Tech Stack</h3>
+                <p data-key="project_p_tech">This prototype is built in HTML/JS, but our full production build is planned with a scalable, professional stack:</p>
+                <ul>
+                    <li data-key="project_t1"><strong>Frontend:</strong> React Native (for one iOS/Android codebase).</li>
+                    <li data-key="project_t2"><strong>Backend:</strong> Python (FastAPI) to serve the AI models with low latency.</li>
+                    <li data-key="project_t3"><strong>Database:</strong> Firebase for user profiles, scan history, and model logging.</li>
+                </ul>
+
+                <h3 data-key="project_h_scope">Future Scope (Phase 2 & 3)</h3>
+                <ul>
+                    <li data-key="project_s1"><strong>Drone Integration:</strong> Using our AI engine to analyze large-scale drone and satellite imagery for automated field mapping.</li>
+                    <li data-key="project_s2"><strong>National Outbreak Tracking:</strong> Building a real-time, national map to predict and track disease outbreaks, providing early warnings to all users.</li>
+                    <li data-key="project_s3"><strong>Supplier Partnerships:</strong> Integrating our "Find Suppliers" feature directly with local agricultural suppliers for a seamless solution.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="lang.js"></script> <script>
+        VANTA.NET({
+          el: "#vanta-bg",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x3bff84,
+          backgroundColor: 0x1a2a1a,
+          points: 10.00,
+          maxDistance: 25.00,
+          spacing: 18.00
+        })
+    </script>
+</body>
+</html>
